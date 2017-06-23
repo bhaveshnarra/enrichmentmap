@@ -2,8 +2,49 @@
    <head>
      <title>Getting Started</title>
      <script src="https://unpkg.com/lodash@4.16.6"></script>
+     <link rel="stylesheet" type="text/css" href="./styles.css">
    </head>
    <body>
-    <script src="bundle.js"></script>
+     <nav class="navbar navbar-default" style="margin:0;">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">Enrichment Map demo</a>
+         </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+         </div>
+       </div>
+     </nav>
+     </div> 
+     <div class="row container-fluid">
+       <div class="col-sm-4 input_pane">
+         <form class="well">
+           <div class="form-group">
+             <label for="genes">Gene List</label>
+             <textarea class="form-control" rows="16" id="genes" ></textarea>
+           </div>
+           <div class="form-group">
+             <label for="curcluster">Current Enrichment Map cluster</label>
+             <input class="form-control" min="1" value="1" type="number" id="curcluster" />
+           </div>
+           <div class="form-group">
+             <label for="curclusterpath">Current Cluster Path</label>
+             <select class="form-control" id="curclusterpath">
+               <option>Path1</option>
+               <option>Path2</option>
+               <option>Path3</option>
+               <option>Path4</option>
+             </select>
+           </div>
+         </form>
+       </div>
+    <script src="./bundle.js"></script>
    </body>
   </html>

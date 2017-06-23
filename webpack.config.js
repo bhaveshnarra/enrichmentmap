@@ -1,5 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -7,7 +9,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(), // Enable HMR
+    new webpack.HotModuleReplacementPlugin(),
+    new ExtractTextPlugin("styles.css"), // Enable HMR
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
@@ -29,16 +32,16 @@ module.exports = {
     rules:[
        {
          test: /\.css$/,
-         use: [
-           'style-loader',
-           'css-loader'
-         ]
+         use: ExtractTextPlugin.extract({
+           fallback: "style-loader",
+           use: "css-loader"
+         })
        },
        {
          test: /\.(png|svg|jpg|gif)$/,
          use: [
            'file-loader'
-         ]         
+         ]
        },
        {
          test: /\.(woff|woff2|eot|ttf|otf)$/,
