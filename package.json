@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack-dev-server --debug --progress --config webpack.config.js",
+    "watch": "webpack -p --progress --config webpack.config.js",
     "build": "webpack-dev-server --debug --progress --config webpack.config.js",
     "start": "webpack-dev-server --host 0.0.0.0 --inline --content-base ."
   },
