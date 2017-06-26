@@ -13,7 +13,7 @@ WORKDIR /webapps/enrichmentmap
 RUN cp -r /tmp/enrichmentmap/. /webapps/enrichmentmap/
 
 # replace www host to beta in development
-RUN npm run build
+# RUN npm run build
 
 RUN chown -R nodejs:nodejs /webapps/enrichmentmap
 
