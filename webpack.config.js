@@ -66,7 +66,7 @@ module.exports = {
   devServer: {
     hot: true, // Tell the dev-server we're using HMR
     host: '0.0.0.0',
-    port: 4000,    
+    port: 8080,    
     contentBase: path.resolve(__dirname, 'public'),
     publicPath: '/'
   }

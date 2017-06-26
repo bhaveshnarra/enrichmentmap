@@ -17,8 +17,8 @@ RUN npm run build
 
 RUN chown -R nodejs:nodejs /webapps/enrichmentmap
 
-EXPOSE 4000
+EXPOSE 8080
 USER nodejs
 
 CMD ["npm", "start"]
-EXPOSE 4000
+EXPOSE 8080
