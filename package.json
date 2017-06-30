@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack -p --progress --config webpack.config.js",
-    "build": "webpack-dev-server --debug --progress --config webpack.config.js",
+    "build": "webpack -p --progress --config webpack.config.js",
+    "watch": "webpack-dev-server --debug --progress --config webpack.config.js",
     "start": "http-server ./public -p 8080"
   },
   "repository": {
