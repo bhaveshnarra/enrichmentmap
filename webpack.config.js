@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, './public')
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -66,7 +66,7 @@ module.exports = {
   devServer: {
     hot: true, // Tell the dev-server we're using HMR
     host: '0.0.0.0',
-    port: 8080,    
+    port: 8080,
     contentBase: path.resolve(__dirname, 'public'),
     publicPath: '/'
   }
