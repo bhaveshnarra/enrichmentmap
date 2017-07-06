@@ -3,7 +3,7 @@ var webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, './public')
@@ -30,6 +30,15 @@ module.exports = {
     }
   ],
     rules:[
+      {
+        test: /\.jsx?$/,
+        exclude:/node_modules/,
+        loader: "babel-loader",
+        options: {
+          presets: ["es2015"]
+        },
+
+      },
        {
          test: /\.css$/,
          use: ExtractTextPlugin.extract({
