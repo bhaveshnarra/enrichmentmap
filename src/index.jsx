@@ -6,13 +6,14 @@ import 'bootswatch/flatly/bootstrap.css';
 import './css/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Cytoscape } from './js/react-cytoscape.js'
+import { Cytoscape } from './js/react-cytoscape.jsx';
+import { Genelist } from './js/genelist.jsx';
 import createPlotlyComponent from 'react-plotlyjs';
 import Plotly from 'plotly.js/dist/plotly-cartesian';
 
 const mountElement = $('#epout').get(0);
-const mountCytoscape = $('#emout').get(0);
-
+const mountCytoscape = $('#cp').get(0);
+const mountGenelist = $('#form').get(0);
 const PlotlyComponent = createPlotlyComponent(Plotly);
 
 export class App extends React.Component {
@@ -59,13 +60,7 @@ export class App extends React.Component {
 
 }
 
-export class Cytoapp extends React.Component {
-	render() {
-		return (
-			<Cytoscape style={styles} />
-		);
-	}
-}
 
 ReactDOM.render(<App/>, mountElement);
-ReactDOM.render(<Cytoapp/>, mountCytoscape);
+ReactDOM.render(<Cytoscape/>, mountCytoscape);
+ReactDOM.render(<Genelist/>, mountGenelist);

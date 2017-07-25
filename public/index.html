@@ -23,26 +23,7 @@
        </div>
      </nav>
      <div class="row container-fluid">
-       <div class="col-sm-4 input_pane">
-         <form class="well">
-           <div class="form-group">
-             <label for="genes">Gene List</label>
-             <textarea class="form-control" rows="16" id="genes" ></textarea>
-           </div>
-           <div class="form-group">
-             <label for="curcluster">Current Enrichment Map cluster</label>
-             <input class="form-control" min="1" value="1" type="number" id="curcluster" />
-           </div>
-           <div class="form-group">
-             <label for="curclusterpath">Current Cluster Path</label>
-             <select class="form-control" id="curclusterpath">
-               <option>Path1</option>
-               <option>Path2</option>
-               <option>Path3</option>
-               <option>Path4</option>
-             </select>
-           </div>
-         </form>
+       <div class="col-sm-4 input_pane" id="form">
        </div>
        <div class="col-sm-8">
 
@@ -67,7 +48,7 @@
    			              </div>
    			              <div class="col-sm-6">
    			                <h4>Current Pathway</h4>
-   											<div class="CP_out"></div>
+   											<div class="CP_out" id="cp"></div>
    			              </div>
    			            </div>
 
