@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import cytoscape from "cytoscape";
 import styled from "styled-components";
 
@@ -37,11 +37,11 @@ const defaultLayout = {
 
 export class Cytoscape extends React.Component {
   runCytoscape() {
-    const { style, layout } = this.props;
+    const { style, elements, layout } = this.props;
 
-    // if (Object.keys(elements).length) {
-      cytoscape({ style, layout, container: this.div });
-    // }
+    if (Object.keys(elements).length) {
+      cytoscape({ style, elements, layout, container: this.div });
+    }
   }
 
   componentDidMount() {
@@ -70,6 +70,6 @@ Cytoscape.defaultProps = {
   width: "100%",
 };
 
-// Cytoscape.propTypes = {
-//   elements: PropTypes.object.isRequired,
-// };
+Cytoscape.propTypes = {
+  elements: PropTypes.object.isRequired,
+};

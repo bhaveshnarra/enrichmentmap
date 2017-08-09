@@ -14,7 +14,6 @@ export class Egmt extends React.Component {
       x.push(plotdata[i]["ID"]);
       y.push(plotdata[i]["Count"]);
     }
-    console.log(x)
   }
 
   componentDidMount() {
