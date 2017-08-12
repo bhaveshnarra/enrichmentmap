@@ -17,205 +17,1363 @@ const mountGenelist = $('#form').get(0);
 
 
 var eles = {
-	nodes:[
-       {
-         data: {
-           name: "PIP3 activates AKT signaling",
-           color: "#FF0000",
-           size: 12.5527,
-           id: "PIP3 activates AKT signaling"
-         }
-       },
-       {
-         data: {
-           name: "Constitutive Signaling by Aberrant PI3K in Cancer",
-           color: "#FF0000",
-           size: 11.4613,
-           id: "Constitutive Signaling by Aberrant PI3K in Cancer"
-         }
-       },
-       {
-         data: {
-           name: "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
-           color: "#FF0000",
-           size: 11.7609,
-           id: "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling"
-         }
-       },
-       {
-         data: {
-           name: "Fanconi Anemia Pathway",
-           color: "#FF0000",
-           size: 10.4139,
-           id: "Fanconi Anemia Pathway"
-         }
-       },
-       {
-         data: {
-           name: "RAF/MAP kinase cascade",
-           color: "#FF0000",
-           size: 11.7609,
-           id: "RAF/MAP kinase cascade"
-         }
-       },
-       {
-         data: {
-           name: "TP53 Regulates Transcription of DNA Repair Genes",
-           color: "#FE0101",
-           size: 10.4139,
-           id: "TP53 Regulates Transcription of DNA Repair Genes"
-         }
-       },
-       {
-         data: {
-           name: "Signaling by FGFR3 fusions in cancer",
-           color: "#FB1711",
-           size: 7.7815,
-           id: "Signaling by FGFR3 fusions in cancer"
-         }
-       },
-       {
-         data: {
-           name: "Downstream signal transduction",
-           color: "#FA231A",
-           size: 9.0309,
-           id: "Downstream signal transduction"
-         }
-       },
-       {
-         data: {
-           name: "Signaling by FGFR4 in disease",
-           color: "#F73528",
-           size: 7.7815,
-           id: "Signaling by FGFR4 in disease"
-         }
-       },
-       {
-         data: {
-           name: "Regulation of TP53 Degradation",
-           color: "#E5C494",
-           size: 9.0309,
-           id: "Regulation of TP53 Degradation"
-         }
-       }
-     ],
-
-
-  edges:[
-       {
-         data: {
-           source: "PIP3 activates AKT signaling",
-           target: "Constitutive Signaling by Aberrant PI3K in Cancer",
-           width: 3.9441
-         }
-       },
-       {
-         data: {
-           source: "PIP3 activates AKT signaling",
-           target: "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
-           width: 4.0825
-         }
-       },
-       {
-         data: {
-           source: "Constitutive Signaling by Aberrant PI3K in Cancer",
-           target: "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
-           width: 4.3205
-         }
-       },
-       {
-         data: {
-           source: "PIP3 activates AKT signaling",
-           target: "RAF/MAP kinase cascade",
-           width: 3.1623
-         }
-       },
-       {
-         data: {
-           source: "Constitutive Signaling by Aberrant PI3K in Cancer",
-           target: "RAF/MAP kinase cascade",
-           width: 3.496
-         }
-       },
-       {
-         data: {
-           source: "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
-           target: "RAF/MAP kinase cascade",
-           width: 3.4028
-         }
-       },
-       {
-         data: {
-           source: "Fanconi Anemia Pathway",
-           target: "TP53 Regulates Transcription of DNA Repair Genes",
-           width: 2.1082
-         }
-       },
-       {
-         data: {
-           source: "RAF/MAP kinase cascade",
-           target: "Signaling by FGFR3 fusions in cancer",
-           width: 2.1693
-         }
-       },
-       {
-         data: {
-           source: "PIP3 activates AKT signaling",
-           target: "Downstream signal transduction",
-           width: 2.1822
-         }
-       },
-       {
-         data: {
-           source: "Constitutive Signaling by Aberrant PI3K in Cancer",
-           target: "Downstream signal transduction",
-           width: 2.4254
-         }
-       },
-       {
-         data: {
-           source: "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
-           target: "Downstream signal transduction",
-           width: 2.357
-         }
-       },
-       {
-         data: {
-           source: "RAF/MAP kinase cascade",
-           target: "Downstream signal transduction",
-           width: 2.357
-         }
-       },
-       {
-         data: {
-           source: "Signaling by FGFR3 fusions in cancer",
-           target: "Downstream signal transduction",
-           width: 3.3333
-         }
-       },
-       {
-         data: {
-           source: "RAF/MAP kinase cascade",
-           target: "Signaling by FGFR4 in disease",
-           width: 2.1693
-         }
-       },
-       {
-         data: {
-           source: "Signaling by FGFR3 fusions in cancer",
-           target: "Signaling by FGFR4 in disease",
-           width: 3.7796
-         }
-       },
-       {
-         data: {
-           source: "Downstream signal transduction",
-           target: "Signaling by FGFR4 in disease",
-           width: 3.3333
-         }
-       }
-     ]
-
+	"nodes": [
+		{
+			"data": {
+				"id": ["BRAP"],
+				"name": ["BRAP"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["JAK2"],
+				"name": ["JAK2"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["MAP2K1"],
+				"name": ["MAP2K1"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["MAP2K2"],
+				"name": ["MAP2K2"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["MAP3K11"],
+				"name": ["MAP3K11"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["MARK3"],
+				"name": ["MARK3"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PHB"],
+				"name": ["PHB"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PPP2CA"],
+				"name": ["PPP2CA"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PPP2CB"],
+				"name": ["PPP2CB"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PPP2R1A"],
+				"name": ["PPP2R1A"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PPP2R1B"],
+				"name": ["PPP2R1B"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PPP2R5A"],
+				"name": ["PPP2R5A"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PPP2R5B"],
+				"name": ["PPP2R5B"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PPP2R5C"],
+				"name": ["PPP2R5C"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PPP2R5D"],
+				"name": ["PPP2R5D"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["PPP2R5E"],
+				"name": ["PPP2R5E"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["SRC"],
+				"name": ["SRC"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["ARAF"],
+				"name": ["ARAF"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["BRAF"],
+				"name": ["BRAF"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["HRAS"],
+				"name": ["HRAS"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["KRAS"],
+				"name": ["KRAS"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["KSR1"],
+				"name": ["KSR1"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["NRAS"],
+				"name": ["NRAS"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["RAF1"],
+				"name": ["RAF1"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		},
+		{
+			"data": {
+				"id": ["YWHAB"],
+				"name": ["YWHAB"],
+				"color": ["#888888"],
+				"shape": ["ellipse"],
+				"href": [""],
+				"height": ["70"],
+				"width": ["70"],
+				"nodeLabelColor": ["#FFFFFF"]
+			}
+		}
+	],
+	"edges": [
+		{
+			"data": {
+				"source": ["BRAP"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["BRAP"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["BRAP"],
+				"target": ["HRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["BRAP"],
+				"target": ["KRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["BRAP"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["BRAP"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["BRAP"],
+				"target": ["NRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["BRAP"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["BRAP"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["JAK2"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["JAK2"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["JAK2"],
+				"target": ["HRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["JAK2"],
+				"target": ["KRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["JAK2"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["JAK2"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["JAK2"],
+				"target": ["NRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["JAK2"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["JAK2"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K1"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K1"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K1"],
+				"target": ["HRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K1"],
+				"target": ["KRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K1"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K1"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K1"],
+				"target": ["NRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K1"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K1"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K2"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K2"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K2"],
+				"target": ["HRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K2"],
+				"target": ["KRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K2"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K2"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K2"],
+				"target": ["NRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K2"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP2K2"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP3K11"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP3K11"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP3K11"],
+				"target": ["HRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP3K11"],
+				"target": ["KRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP3K11"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP3K11"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP3K11"],
+				"target": ["NRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP3K11"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MAP3K11"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["MARK3"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PHB"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PHB"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PHB"],
+				"target": ["HRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PHB"],
+				"target": ["KRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PHB"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PHB"],
+				"target": ["NRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PHB"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PHB"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CA"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CA"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CA"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CA"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CA"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CA"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CB"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CB"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CB"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CB"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CB"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2CB"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1A"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1A"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1A"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1A"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1A"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1A"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1B"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1B"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1B"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1B"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1B"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R1B"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5A"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5A"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5A"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5A"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5A"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5A"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5B"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5B"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5B"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5B"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5B"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5B"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5C"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5C"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5C"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5C"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5C"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5C"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5D"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5D"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5D"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5D"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5D"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5D"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5E"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5E"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5E"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5E"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5E"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["PPP2R5E"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["SRC"],
+				"target": ["ARAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["SRC"],
+				"target": ["BRAF"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["SRC"],
+				"target": ["HRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["SRC"],
+				"target": ["KRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["SRC"],
+				"target": ["KSR1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["SRC"],
+				"target": ["MARK3"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["SRC"],
+				"target": ["NRAS"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["SRC"],
+				"target": ["RAF1"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		},
+		{
+			"data": {
+				"source": ["SRC"],
+				"target": ["YWHAB"],
+				"color": ["#888888"],
+				"edgeSourceShape": ["none"],
+				"edgeTargetShape": ["triangle"]
+			}
+		}
+	]
 };
 
 
