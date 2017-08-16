@@ -6,6 +6,7 @@ const PlotlyComponent = createPlotlyComponent(Plotly);
 
 const x = [];
 const y = [];
+const z = [];
 
 export class Egmt extends React.Component {
 
@@ -13,6 +14,7 @@ export class Egmt extends React.Component {
     for (var i = 0; i < plotdata.length; i++) {
       x.push(plotdata[i]["ID"]);
       y.push(plotdata[i]["Count"]);
+      z.push(plotdata[i]["p.adjust"] + "</br>" + plotdata[i]["BgRatio"]+ "</br>" + plotdata[i]["GeneRatio"]);
     }
   }
 
@@ -26,23 +28,20 @@ export class Egmt extends React.Component {
           type: 'bar',      // all "bar" chart attributes: #bar
           x: x,     // more about "x": #bar-x
           y: y,     // #bar-y
+          text: z,
           name: 'bar chart example' // #bar-name
         }
       ];
       let layout = {                     // all "layout" attributes: #layout
         title: 'simple example',  // more about "layout.title": #layout-title
         xaxis: {                  // all "layout.xaxis" attributes: #layout-xaxis
-          title: 'time'         // more about "layout.xaxis.title": #layout-xaxis-title
+          title: 'time',
+          autorange: 'true'
         },
-        annotations: [            // all "annotation" attributes: #layout-annotations
-          {
-            text: 'simple annotation',    // #layout-annotations-text
-            x: 0,                         // #layout-annotations-x
-            xref: 'paper',                // #layout-annotations-xref
-            y: 0,                         // #layout-annotations-y
-            yref: 'paper'                 // #layout-annotations-yref
-          }
-        ]
+        yaxis: {                  // all "layout.xaxis" attributes: #layout-xaxis
+          title: 'time',
+          autorange: 'true'
+        }
       };
       let config = {
         showLink: false,
