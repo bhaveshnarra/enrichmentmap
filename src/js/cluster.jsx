@@ -27,7 +27,7 @@ export class Cluster extends React.Component {
   render() {
     let list = this.state.rows.map(p =>{
          return (
-              <tr>
+              <tr key={p.id}>
                 <td>{p.Gene}</td>
                 <td>{p.Count}</td>
               </tr>

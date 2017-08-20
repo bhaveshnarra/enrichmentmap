@@ -26,7 +26,7 @@ const defaultEdgeStyle = {
     "haystack-radius": 0,
     width: 5,
     opacity: 0.666,
-    "line-color": "#fcc694",
+    "line-color": "data(color)",
     'target-arrow-shape': 'data(edgeTargetShape)',
   },
 };
@@ -92,12 +92,20 @@ export class Cytoscape extends React.Component {
       }
       elements["nodes"] = nodes;
       elements["edges"] = edges;
-      cytoscape({ style, elements, layout, container: this.div });
+      var cy = cytoscape({ style, elements, layout, container: this.div });
+      cy.on('tap', 'node', function(){
+       try { // your browser may block popups
+       window.open( this.data('href') );
+     } catch(e){ // fall back on url change
+       window.location.href = this.data('href');
+     }
+   });
     }
   }
 
   componentDidMount() {
     this.runCytoscape();
+
   }
 
   componentDidUpdate() {

@@ -27,7 +27,7 @@ var eles = {
 				"name": ["BRAP"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=BRAP&keywords=BRAP"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -39,7 +39,7 @@ var eles = {
 				"name": ["JAK2"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=JAK2&keywords=JAK2"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -51,7 +51,7 @@ var eles = {
 				"name": ["MAP2K1"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=MAP2K1&keywords=MAP2k1"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -63,7 +63,7 @@ var eles = {
 				"name": ["MAP2K2"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=MAP2K2&keywords=MAP2k1"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -75,7 +75,7 @@ var eles = {
 				"name": ["MAP3K11"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=MAP3K11&keywords=MAP3k11"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -87,7 +87,7 @@ var eles = {
 				"name": ["MARK3"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=MARK3&keywords=MARK3"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -99,7 +99,7 @@ var eles = {
 				"name": ["PHB"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=PHB&keywords=PHB"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -123,7 +123,7 @@ var eles = {
 				"name": ["PPP2CB"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=PPP2CA&keywords=PPP2cA"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -135,7 +135,7 @@ var eles = {
 				"name": ["PPP2R1A"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=PPP2R1A&keywords=PPP2R1A"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -147,7 +147,7 @@ var eles = {
 				"name": ["PPP2R1B"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=PPP2R1B&keywords=PPP2R1B"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -159,7 +159,7 @@ var eles = {
 				"name": ["PPP2R5A"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=PPP2R5A&keywords=PPP2R5A"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -171,7 +171,7 @@ var eles = {
 				"name": ["PPP2R5B"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=PPP2R5B&keywords=PPP2R5B"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -183,7 +183,7 @@ var eles = {
 				"name": ["PPP2R5C"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=PPP2R5C&keywords=PPP2R5C"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -195,7 +195,7 @@ var eles = {
 				"name": ["PPP2R5D"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=PPP2R5D&keywords=PPP2R5D"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -207,7 +207,7 @@ var eles = {
 				"name": ["PPP2R5E"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=PPP2R5E&keywords=PPP2R5E"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -219,7 +219,7 @@ var eles = {
 				"name": ["SRC"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=SRC&keywords=SRC"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -231,7 +231,7 @@ var eles = {
 				"name": ["ARAF"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=ARAF&keywords=ARAF"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -243,7 +243,7 @@ var eles = {
 				"name": ["BRAF"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=BRAF&keywords=BRAF"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -255,7 +255,7 @@ var eles = {
 				"name": ["HRAS"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=HRAS&keywords=HRAS"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -267,7 +267,7 @@ var eles = {
 				"name": ["KRAS"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=KRAS&keywords=KRAS"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -279,7 +279,7 @@ var eles = {
 				"name": ["KSR1"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=KSR1&keywords=KSR1"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -291,7 +291,7 @@ var eles = {
 				"name": ["NRAS"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=NRAS&keywords=NRAS"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -303,7 +303,7 @@ var eles = {
 				"name": ["RAF1"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=RAF1&keywords=RAF1"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
@@ -315,7 +315,7 @@ var eles = {
 				"name": ["YWHAB"],
 				"color": ["#888888"],
 				"shape": ["ellipse"],
-				"href": [""],
+				"href": ["http://www.genecards.org/cgi-bin/carddisp.pl?gene=YWHAB&keywords=YWHAB"],
 				"height": ["70"],
 				"width": ["70"],
 				"nodeLabelColor": ["#FFFFFF"]
