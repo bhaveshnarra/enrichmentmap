@@ -12,6 +12,7 @@ export class Cluster extends React.Component {
   }
 
   loaddata() {
+    var geneCountDF = this.props["geneCountDF"];
     for (var i = 0; i < geneCountDF.length; i++) {
       var ele = {
         id: i,
@@ -48,15 +49,3 @@ export class Cluster extends React.Component {
       );
     }
 }
-
-
-var geneCountDF = [
-  {
-    "Gene": "TP53",
-    "Count": 8
-  },
-  {
-    "Gene": "MDM2",
-    "Count": 7
-  }
-]

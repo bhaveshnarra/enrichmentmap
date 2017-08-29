@@ -1,6 +1,5 @@
 import React from "react";
 
-var axios = require('axios');
 
 export class Genelist extends React.Component{
 
@@ -17,18 +16,9 @@ export class Genelist extends React.Component{
   }
 
   handleSubmit(event) {
-
-    axios.post('http://127.0.0.1:40/ocpu/library/enrichmentmap/R/getEnrichmentMap/json', {
-        genes: this.state.value.split("\n"),
-      })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
     event.preventDefault();
+    this.props.onCall(this.state.value.split("\n"));
+
   }
 
   render(){
