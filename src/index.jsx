@@ -17,8 +17,6 @@ const mountcurCy = $('#emout').get(0);
 const mountGenelist = $('#form').get(0);
 const mountCluster = $('#cgout').get(0);
 
-
-
 var eles = {
 	"nodes": [
 		{
