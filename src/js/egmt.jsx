@@ -3,33 +3,42 @@ import createPlotlyComponent from 'react-plotlyjs';
 import Plotly from 'plotly.js/dist/plotly-cartesian';
 const PlotlyComponent = createPlotlyComponent(Plotly);
 
-const x = [];
-const y = [];
-const z = [];
 
 export class Egmt extends React.Component {
-
+  constructor(props) {
+  super(props);
+  this.state = {data: [],
+                x:[],
+                y:[],
+                z:[]
+              };
+  }
 
   loaddata() {
-    var plotdata = this.props["plotdata"];
+    var plotdata = this.state.data;
+    this.state.x = [];
+    this.state.y = [];
+    this.state.z = [];
     for (var i = 0; i < plotdata.length; i++) {
-      x.push(plotdata[i]["ID"]);
-      y.push(plotdata[i]["Count"]);
-      z.push(plotdata[i]["p.adjust"] + "</br>" + plotdata[i]["BgRatio"]+ "</br>" + plotdata[i]["GeneRatio"]);
+      this.state.x.push(plotdata[i]["ID"]);
+      this.state.y.push(plotdata[i]["Count"]);
+      this.state.z.push(plotdata[i]["p.adjust"] + "</br>" + plotdata[i]["BgRatio"]+ "</br>" + plotdata[i]["GeneRatio"]);
     }
   }
 
-  componentDidMount() {
-    this.loaddata();
+  componentWillReceiveProps(nextProps) {
+            this.setState({data:nextProps["plotdata"]});
+            console.log(this.state.data);
+            this.loaddata();
   }
 
   render() {
       let data = [
         {
           type: 'bar',      // all "bar" chart attributes: #bar
-          x: x,     // more about "x": #bar-x
-          y: y,     // #bar-y
-          text: z,
+          x: this.state.x,     // more about "x": #bar-x
+          y: this.state.y,     // #bar-y
+          text: this.state.z,
           name: 'bar chart example' // #bar-name
         }
       ];

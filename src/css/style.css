@@ -76,3 +76,21 @@ body {
 .well {
 	padding: 25px;
 }
+
+#loader{
+  z-index:25;
+  position:absolute;
+  height: 200px;
+  width: 400px;
+  display: none;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -200px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: url("/loader.gif");
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: center;
+}

@@ -3,37 +3,30 @@ import createPlotlyComponent from 'react-plotlyjs';
 import Plotly from 'plotly.js/dist/plotly-cartesian';
 const PlotlyComponent = createPlotlyComponent(Plotly);
 
+var temp = [];
 
 export class Cluster extends React.Component {
-  constructor(props) {
-  super(props);
-  this.state = {rows: []};
-  this.loaddata();
-  }
 
   loaddata() {
     var geneCountDF = this.props["geneCountDF"];
+    temp = [];
     for (var i = 0; i < geneCountDF.length; i++) {
-      var ele = {
-        id: i,
-        Gene: geneCountDF[i]["Gene"],
-        Count: geneCountDF[i]["Count"]
-      }
-      this.state.rows.push(ele);
+
+      temp.push(<tr key={i}><td>{geneCountDF[i]["Gene"]}</td><td>{geneCountDF[i]["Count"]}</td></tr>);
     }
 
   }
 
+  componentWillReceiveProps(nextProps) {
+    // You don't have to do this check first, but it can help prevent an unneeded render
+    this.loaddata();
+    }
+
+  componentDidUpdate() {
+    this.loaddata();
+  }
 
   render() {
-    let list = this.state.rows.map(p =>{
-         return (
-              <tr key={p.id}>
-                <td>{p.Gene}</td>
-                <td>{p.Count}</td>
-              </tr>
-         );
-    });
       return (
         <table className="table table-bordered">
           <thead>
@@ -43,7 +36,7 @@ export class Cluster extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {list}
+            {temp}
           </tbody>
         </table>
       );
