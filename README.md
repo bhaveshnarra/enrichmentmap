@@ -2,9 +2,9 @@
 
 # prequisites
 
-*NODEJS
-*npm
-*docker
+* NODEJS
+* npm
+* docker
 
 
 ## To Load the Enrichmentmap App
