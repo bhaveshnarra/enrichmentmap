@@ -10,8 +10,8 @@
 ## To Load the Enrichmentmap App
 
 ```
-docker pull bhaveshsunny60/emp
-docker run bhaveshsunny60/emp
+docker pull bhaveshsunny60/emp:latest
+docker run bhaveshsunny60/emp:latest
 ```
 To load OpenCPU server
 
@@ -21,3 +21,12 @@ docker rm -f oc; docker run --name oc -t -p 40:80 -p 8004:8004 cannin/opencpu:en
 ```
 
 access the app at http://127.0.0.1:8080/
+
+## TEST
+
+input : ["MDM2"]
+
+## NOTE
+
+In Case of Cluster genes and Enrichment Plot not working click submit again.
+
