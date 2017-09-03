@@ -6,14 +6,21 @@
 * npm
 * docker
 
+## Install(Only if you want a local version instead of a docker container)
 
-## To Load the Enrichmentmap App
+```
+git clone https://github.com/bhaveshsunny/enrichmentmap/
+npm install
+npm run build
+```
+
+## To Load the Enrichmentmap App (Docker container)
 
 ```
 docker pull bhaveshsunny60/emp:latest
 docker run -d bhaveshsunny60/emp:latest
 ```
-To load OpenCPU server
+## To load OpenCPU server
 
 ```
 docker pull cannin/opencpu:enrichmentmap
