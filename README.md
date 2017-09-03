@@ -11,7 +11,7 @@
 ```
 git clone https://github.com/bhaveshsunny/enrichmentmap/
 npm install
-npm run build
+npm run watch
 ```
 
 ## To Load the Enrichmentmap App (Docker container)
